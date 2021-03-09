@@ -1,0 +1,98 @@
+body {
+  background-color: #202020;
+  color: #999999;
+  margin-bottom: 30px;
+}
+.header {
+  font-size: 85;
+  margin-left: 10;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#intro {
+  margin-left: 3%;
+  font-size: 20px;
+  margin-top: auto;
+  font-style: italic;
+}
+
+/*Slider settings*/
+#slider {
+  width: 42%;
+  -webkit-appearance: none;
+  background-color: #303030;
+  height: 10px;
+}
+#slider:focus {
+  outline: none;
+}
+#slider::-webkit-slider-runnable-track {
+}
+#slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+width: 25px;
+height: 25px;
+border-radius: 20%;
+background: #909090;
+}
+
+/*Grid settings*/
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "item item item item"
+    "item item item item"
+    "item item item item";
+  align-items: stretch;
+  justify-content: space-around;
+}
+.item {
+  grid-area: auto;
+  font-size: 25px;
+}
+
+/*Navbar settings*/
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: inherit;
+  overflow: auto;
+  white-space: nowrap;
+}
+.navbar a {
+  display: inline-block;
+  color: inherit;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: green;
+}
+
+/*Phone settings*/
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 32;
+    text-align: center;
+  }
+  #intro {
+    text-align: center;
+  }
+  #slider {
+    width: 100%;
+  }
+  .container {
+    grid-template-areas:
+      "item item"
+      "item item"
+      "item item"
+      "item item"
+      "item item"
+      "item item";
+    text-align: center;
+  }
+}

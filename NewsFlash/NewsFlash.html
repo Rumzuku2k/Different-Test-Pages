@@ -1,0 +1,113 @@
+<html>
+<head>
+  <meta charset="utf-8" lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' type="text/css" href='style.css'></style>
+  <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#slider').on('change', function () {
+          var v = $(this).val();
+          $('.item').css('font-size', v + 'px')
+        });
+    });
+  </script>
+
+</head>
+<body>
+  <div class="intro">
+    <h1 class="header">NewsFlash</h1>
+    <p id="intro">All Your Favourite Content In One</p>
+  </div>
+  <input type="range" min="10" max="40" id="slider">
+  <div class="container">
+    <div class="item">
+      <p>Red Dead Online update</p>
+      <a href="https://www.eurogamer.net/articles/2020-03-10-red-dead-online-update-tries-to-stop-cripps-from-packing-up-your-camp" target="_blank">
+      <img src="images/news1.png" alt="Red Dead Online">
+      </a>
+    </div>
+    <div class="item">
+      <p>E3 2020 has been canceled</p>
+      <a href="https://www.theverge.com/2020/3/11/21163570/e3-canceled-coronavirus-outbreak-xbox-nintendo" target="_blank">
+      <img src="images/news2.png" alt="E2 2020">
+      </a>
+    </div>
+    <div class="item">
+      <p>Ori and the Will of the Wisps</p>
+      <a href="https://www.pressfire.no/anmeldelser/XboxOne/15092/" target="_blank">
+      <img src="images/news3.png" alt="Ori and the Will of the Wisps">
+      </a>
+    </div>
+    <div class="item">
+      <p>Amazon Prime Day 2020</p>
+      <a href="https://www.digitaltrends.com/dtdeals/best-amazon-prime-day-deals/" target="_blank">
+      <img src="images/news4.png" alt="Amazon Prime Day 2020">
+      </a>
+    </div>
+    <div class="item">
+      <p>Nvidia cancels GTC 2020 keynote</p>
+      <a href="https://www.techradar.com/news/nvidia-cancels-gtc-2020-keynote-but-hopefully-its-next-gen-gpu-launch-is-still-on?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+techradar%2Fgaming-news+%28TechRadar%3A+Gaming+news%29"
+      target="_blank">
+      <img src="images/news5.png" alt="Nvidia">
+      </a>
+    </div>
+    <div class="item">
+      <p>Nioh 2 review</p>
+      <a href="https://www.gameinformer.com/review/nioh-2/nioh-2-review-meticulous-masochism" target="_blank">
+      <img src="images/news6.png" alt="News6">
+      </a>
+    </div>
+    <div class="item">
+      <p>Mario day sale</p>
+      <a href="https://www.gamesradar.com/mario-day-sale-offers-big-savings-on-nintendo-switch-games-like-mario-kart-and-super-mario-maker-2/"
+      target="_blank">
+      <img src="images/news7.png" alt="Nintendo Sale">
+      </a>
+    </div>
+    <div class="item">
+      <p>Tony Hawk leak</p>
+      <a href="https://www.eurogamer.net/articles/2020-03-10-more-leaks-point-to-new-tony-hawk-game-arriving-later-this-year"
+      target="_blank">
+      <img src="images/news8.png" alt="Tony Hawk">
+      </a>
+    </div>
+    <div class="item">
+      <p>Fake coronavirs claims</p>
+      <a href="https://www.telegraph.co.uk/technology/2020/03/09/government-launches-task-force-tackle-fake-coronavirus-claims/"
+      target="_blank">
+      <img src="images/news9.png" alt="coronavirus">
+      </a>
+    </div>
+    <div class="item">
+      <p>Elon Musk will fly space tourists</p>
+      <a href="https://www.telegraph.co.uk/technology/2020/03/06/elon-musk-will-fly-space-tourists-iss-next-year/"
+      target="_blank">
+      <img src="images/news10.png" alt="Elon musk">
+      </a>
+    </div>
+    <div class="item">
+      <p>Doom 64's pc port</p>
+      <a href="https://www.eurogamer.net/articles/2020-03-10-doom-64s-upcoming-port-will-add-a-brand-new-post-campaign-chapter"
+      target="_blank">
+      <img src="images/news11.png" alt="Doom64">
+      </a>
+    </div>
+    <div class="item">
+      <p>One Punch Man review</p>
+      <a href="https://www.gamereactor.no/one-punch-man-a-hero-nobody-knows-anmeldelse/"
+      target="_blank">
+      <img src="images/news12.png" alt="One Punch Man">
+      </a>
+    </div>
+  </div>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#hnews">HOT</a>
+    <a href="#personal">For You</a>
+    <a href="#site1">Chosen site</a>
+    <a href="#site2">Chosen site</a>
+  </div>
+</body>
+</html>
